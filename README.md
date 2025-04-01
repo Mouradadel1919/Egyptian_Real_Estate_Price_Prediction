@@ -1,6 +1,10 @@
 # Egyptian Real Estate Price Prediction
 
 
+https://github.com/user-attachments/assets/f56f8504-8242-44b1-bbde-de7099c26bad
+
+
+
 A machine learning pipeline for predicting real estate prices in Egypt, from data collection to production deployment.
 
 ## 📖 Overview
