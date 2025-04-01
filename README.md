@@ -46,7 +46,7 @@ Collected 300,000+ property listings with detailed features:
 ## 📈 Evaluation
 | Metric            | Value   |
 |-------------------|---------|
-| Mean Squared Error| 0.0182  |
+| Mean Squared Error| 0.0173  |
 | R² Score          | 0.96    |
 
 
