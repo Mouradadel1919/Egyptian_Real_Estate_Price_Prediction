@@ -55,8 +55,7 @@ Collected 300,000+ property listings with detailed features:
 
 ### Docker Deployment:
 
-Docker Hub:- [https://hub.docker.com/repository/docker/mouradadel313/real_estate/tags](https://hub.docker.com/repository/docker/mouradadel313/egyptian_real_estate_price_prediction/tags)
-
+Docker Hub:- https://hub.docker.com/repository/docker/mouradadel313/egyptian_real_estate_price_prediction/tags
 ```bash
 docker pull mouradadel313/egyptian_real_estate_price_prediction:latest
 docker run -d -p 5000:5000 mouradadel313/egyptian_real_estate_price_prediction:latest
