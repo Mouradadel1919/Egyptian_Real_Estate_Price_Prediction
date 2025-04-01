@@ -25,9 +25,9 @@ Collected 300,000+ property listings with detailed features:
 ## 📊 Data Preprocessing & EDA
 ### Key Challenges & Solutions:
 - **Inflation Adjustment**: Integrated [Central Bank of Egypt](https://www.cbe.org.eg/en) inflation rates to convert prices to 2024 equivalents
-- This Graph Show the Fake Profit ( Generated Column = 2% of each price ) Before removing inflation.
+- This Graph Show the Fake Profit for last 5 years( Generated Column = 2% of each price ) Before removing inflation.
 ![be](https://github.com/user-attachments/assets/fade72b1-ef7d-4ac5-9b96-981e20504b00)
-- This Graph Show the Real Profit ( Generated Column = 2% of each price ) after removing inflation.
+- This Graph Show the Real Profit for last 5 years ( Generated Column = 2% of each price ) after removing inflation.
 ![af](https://github.com/user-attachments/assets/c68727e9-4d78-4f3e-9191-8b662b4b0558)
 
 - Feature Engineering:
