@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title> Predict </title>
+{% endblock %}
+
+
+{% block body %}
+<h2>Predict</h2>
+
+<form action="/predict" method="POST">
+    <div class="form-row">
+        <label for="locations">Location</label>
+        <select class="form-control" select id="locations" name="locations">
+            <option>Greater Cairo</option>
+            <option>Alexandria</option>
+            <option>North Coast</option>
+            <option>other</option>
+        </select>
+        <br>
+        <br>
+
+        <div class="form-group col-md-6">
+            <label for="Price_per_m">Price Per m2</label>
+            <input type="text" class="form-control" id="Price_per_m" name="Price_per_m" placeholder="Price_per_m">
+        </div>
+
+    </div>
+    <div class="form-group">
+        <label for="rooms">Rooms</label>
+        <input type="text" class="form-control" id="rooms" name="rooms" placeholder="rooms">
+        <p>From 1 To 5.</p>
+    </div>
+
+    <div class="form-group">
+        <label for="bathrooms">Bathooms</label>
+        <input type="text" class="form-control" id="bathrooms" name="bathrooms" placeholder="bathrooms">
+        <p>From 1 To 5.</p>
+    </div>
+
+    <div class="form-row">
+        <label for="finishes">Finish Type</label>
+        <select class="form-control" select id="finishes" name="finishes">
+            <option>Extra Super Lux</option>
+            <option>Super Lux</option>
+            <option>Lux</option>
+            <option>Semi Finished</option>
+            <option>Without Finish</option>
+        </select>
+    </div>
+    <br>
+    <div class="form-row">
+        <label for="views">View Type</label>
+        <select class="form-control" select id="views" name="views">
+            <option>Main Street</option>
+            <option>Side Street</option>
+            <option>Garden</option>
+            <option>Corner</option>
+            <option>Sea View</option>
+            <option>Pool</option>
+            <option>Other</option>
+
+        </select>
+    </div>
+    <br>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="floors">Floor</label>
+            <input type="text" class="form-control" id="floors" name="floors" placeholder="floors">
+            <p>From 0 To 10.</p>
+        </div>
+        <br>
+        <br>
+
+        <div class="form-group col-md-6">
+            <label for="years">Year</label>
+            <input type="text" class="form-control" id="years" name="years" placeholder="years">
+            <p>From 2005 To 2040.</p>
+        </div>
+    </div>
+    <label for="payments">Payment Type</label>
+    <select class="form-control" select id="payments" name="payments">
+        <option>Cash</option>
+        <option>Cash or Installments</option>
+        <option>Installments</option>
+    </select>
+    <br>
+
+    <hr>
+    <br>
+    <button type="submit" class="btn btn-primary">Predict</button>
+    <br>
+    <h5> Price is: {{ y_pred }} </h5>
+    <br>
+    <h5> Minimum Price = {{ mini }} </h5>
+
+    <h5> Maximum Prices = {{ maxim }}</h5>
+
+
+</form>
+{% endblock %}
